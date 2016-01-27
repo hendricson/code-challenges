@@ -10,9 +10,9 @@ var d = new Distances();
 
 var sorted_distances = d.reorder(x, y, json);
 console.log(sorted_distances);
-document.write("Distances from (" + x + "," + y + ") to the dots listed in the array, in the order from closest to farthest:<br />");
+console.log("Distances from (" + x + "," + y + ") to the dots listed in the array, in the order from closest to farthest:");
 for (var i = 0; i < sorted_distances.length; i++) {
-	document.write("Dot ID #" + sorted_distances[i].id + ", distance:" + sorted_distances[i].value + "<br />");
+	console.log("Dot ID #" + sorted_distances[i].id + ", distance:" + sorted_distances[i].value);
 }
 </script>
 </body>
